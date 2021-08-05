@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".View.Activity.LandingPageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bg">
+
+        <ImageView
+            android:layout_width="@dimen/dp_250"
+            android:layout_height="@dimen/dp_140"
+            android:src="@drawable/enak_white"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/dp_150"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_300"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30"
+        android:background="@drawable/top_round_background"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/text_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masuk Sebagai"
+                android:textSize="@dimen/text_size_18"
+                android:letterSpacing="0.1"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dp_20"/>
+
+            <RelativeLayout
+                android:id="@+id/btn_petugas"
+                android:layout_below="@id/text_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@drawable/bg_btn_blue"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/text_petugas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Petugas"
+                    android:letterSpacing="0.15"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_atau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="atau"
+                android:textSize="@dimen/text_size_15"
+                android:layout_below="@id/btn_petugas"
+                android:letterSpacing="0.1"
+                android:textColor="@color/grey"
+                android:layout_centerHorizontal="true"/>
+
+            <RelativeLayout
+                android:id="@+id/btn_pemilik"
+                android:layout_below="@id/text_atau"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@drawable/bg_btn_green"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/text_pemilik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Pemilik"
+                    android:letterSpacing="0.15"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/text_size_18"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

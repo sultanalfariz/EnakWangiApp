@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_laporan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/dp_3"
+        app:cardCornerRadius="@dimen/dp_10"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:id="@+id/konten_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_ternak"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_margin="@dimen/dp_5"
+                android:src="@drawable/ic_history"
+                app:riv_corner_radius_top_left="@dimen/dp_10"
+                app:riv_corner_radius_bottom_left="@dimen/dp_10"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_16">
+
+                <TextView
+                    android:id="@+id/text_kode_anting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_14"
+                    android:textAllCaps="true"
+                    android:letterSpacing="0.05"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:textColor="@color/grey"/>
+
+                <TextView
+                    android:id="@+id/text_tgl_tinjau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_12"
+                    android:textAllCaps="false"
+                    android:letterSpacing="0.02"
+                    android:textColor="@color/grey"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:layout_marginBottom="@dimen/dp_4"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/dp_5">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dp_2"
+                        android:paddingBottom="@dimen/dp_2"
+                        android:paddingLeft="@dimen/dp_4"
+                        android:paddingRight="@dimen/dp_4"
+                        android:background="@drawable/bg_btn_grey_transp">
+
+                        <TextView
+                            android:id="@+id/text_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_size_11"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity.MainActivity2">
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/view_main"/>
+
+    <View
+        android:id="@+id/view_main"
+        android:layout_above="@id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:background="@color/grey_transparent"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/icon_home"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_home_active"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_laporan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/icon_laporan"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_lapor_deactive"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_ib"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/icon_ib"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_ib_deactive"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/icon_akun"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_akun_deactive"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

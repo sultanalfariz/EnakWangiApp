@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="dev.app.enak">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/enak_green"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/enak_green"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EnakWangiApp"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon, android:theme">
+        <activity android:name=".View.Activity.UbahPasswordPetugasActivity"></activity>
+        <activity android:name=".View.Activity.PengaturanAkunPetugasActivity" />
+        <activity android:name=".View.Activity.DetailIbPetugasActivity" />
+        <activity android:name=".View.Activity.TinjauIbActivity" />
+        <activity android:name=".View.Activity.TanggapiIbActivity" />
+        <activity android:name=".View.Activity.DaftarIbPetugasSelesaiActivity" />
+        <activity android:name=".View.Activity.DaftarIbPetugasProsesActivity" />
+        <activity android:name=".View.Activity.DaftarIbPetugasTinjauActivity" />
+        <activity android:name=".View.Activity.DaftarIbPetugasWaitActivity" />
+        <activity android:name=".View.Activity.TinjauLaporanActivity" />
+        <activity android:name=".View.Activity.TanggapiLaporanActivity" />
+        <activity android:name=".View.Activity.DaftarLaporanPetugasSelesaiActivity" />
+        <activity android:name=".View.Activity.DaftarLaporanPetugasTinjauActivity" />
+        <activity android:name=".View.Activity.DaftarLaporanPetugasWaitActivity" />
+        <activity android:name=".View.Activity.VerifikasiTernakActivity" />
+        <activity android:name=".View.Activity.TanggapiTernakActivity" />
+        <activity android:name=".View.Activity.DaftarTernakPetugasWaitVerifyActivity" />
+        <activity android:name=".View.Activity.DaftarTernakPetugasWaitTinjauActivity" />
+        <activity android:name=".View.Activity.UbahPasswordUserActivity" />
+        <activity android:name=".View.Activity.PengaturanAkunUserActivity" />
+        <activity android:name=".View.Activity.DetailTerackIbActivity" />
+        <activity android:name=".View.Activity.DetailIbActivity" />
+        <activity android:name=".View.Activity.TrackIbPemilikActivity" />
+        <activity android:name=".View.Activity.TambahIbActivity" />
+        <activity android:name=".View.Activity.RiwayatIbPemilikActivity" />
+        <activity android:name=".View.Activity.DaftarIbPemilikActivity" />
+        <activity android:name=".View.Activity.DetailLaporanActivity" />
+        <activity android:name=".View.Activity.RiwayatLaporanPemilik" />
+        <activity android:name=".View.Activity.DaftarLaporanPemilik" />
+        <activity android:name=".View.Activity.TambahLaporanActivity" />
+        <activity android:name=".View.Activity.DaftarArtikelPemilikActivity" />
+        <activity android:name=".View.Activity.TambahTernakNextActivity" />
+        <activity android:name=".View.Activity.DetailArtikelActivity" />
+        <activity android:name=".View.Activity.DetailTernakActivity" />
+        <activity android:name=".View.Activity.TambahTernakActivity" />
+        <activity android:name=".View.Activity.DaftarTernakPemilikMenungguVerifikasi" />
+        <activity android:name=".View.Activity.DaftarTernakPemilikVerifikasi" />
+        <activity android:name=".View.Activity.MainActivity2" />
+        <activity android:name=".View.Activity.RegisterActivity" />
+        <activity android:name=".View.Activity.CekIdentitasActivity" />
+        <activity android:name=".View.Activity.LoginPetugasActivity" />
+        <activity android:name=".View.Activity.LoginPemilikActivity" />
+        <activity android:name=".View.Activity.LandingPageActivity" />
+        <activity android:name=".View.Activity.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".View.Activity.MainActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

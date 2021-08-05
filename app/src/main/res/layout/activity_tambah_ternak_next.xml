@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".View.Activity.TambahTernakNextActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/text_pemilik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Ternak"
+            android:textSize="@dimen/text_size_17"
+            android:letterSpacing="0.1"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:src="@drawable/arrow_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"/>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_area">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/konten_info"
+                android:background="#3B0026FF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_14"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    android:text ="PERHATIAN!" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.06"
+                    android:lineSpacingExtra="@dimen/dp_2"
+                    android:text = "Mohon isi data ternak dengan benar. Kami akan melakukan peninjauan secara langsung pada saat proses verifikasi." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/konten_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/konten_info"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dp_20"
+                android:padding="@dimen/dp_10">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    app:cardCornerRadius="@dimen/dp_5"
+                    app:cardElevation="@dimen/dp_5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10">
+
+                        <EditText
+                            android:id="@+id/form_alamat_kandang"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_35"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/bg_form"
+                            android:hint="Alamat Kandang"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_15" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    app:cardCornerRadius="@dimen/dp_5"
+                    app:cardElevation="@dimen/dp_5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10">
+
+                        <EditText
+                            android:id="@+id/form_kecamatan"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_35"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/bg_form"
+                            android:hint="Kecamatan"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_15" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    app:cardCornerRadius="@dimen/dp_5"
+                    app:cardElevation="@dimen/dp_5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10">
+
+                        <EditText
+                            android:id="@+id/form_kabupaten"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_35"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/bg_form"
+                            android:hint="Kabupaten"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_15" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/menu_utama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/text_menu"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/dp_5">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_45"
+                            app:cardCornerRadius="@dimen/dp_5"
+                            app:cardElevation="@dimen/dp_5">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="@dimen/dp_10"
+                                android:paddingRight="@dimen/dp_10">
+
+                                <EditText
+                                    android:id="@+id/form_rt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp_35"
+                                    android:layout_centerVertical="true"
+                                    android:background="@drawable/bg_form"
+                                    android:hint="RT"
+                                    android:textColor="@color/black"
+                                    android:inputType="number"
+                                    android:textSize="@dimen/text_size_15" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/klik_ternak_wait"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:background="@drawable/bg_btn_grey_transp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_45"
+                            app:cardCornerRadius="@dimen/dp_5"
+                            app:cardElevation="@dimen/dp_5">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="@dimen/dp_10"
+                                android:paddingRight="@dimen/dp_10">
+
+                                <EditText
+                                    android:id="@+id/form_rw"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp_35"
+                                    android:layout_centerVertical="true"
+                                    android:background="@drawable/bg_form"
+                                    android:hint="RW"
+                                    android:textColor="@color/black"
+                                    android:inputType="number"
+                                    android:textSize="@dimen/text_size_15" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/konten_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_20"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_10"
+                android:layout_below="@+id/konten_1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_tambahkan"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_45"
+                        android:layout_margin="@dimen/dp_10"
+                        android:background="@drawable/bg_btn_green">
+
+                        <TextView
+                            android:id="@+id/text_masuk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Tambahkan"
+                            android:letterSpacing="0.15"
+                            android:textColor="#FFF"
+                            android:textSize="@dimen/text_size_16"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
